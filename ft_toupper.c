@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 /*toupper => Convierte una letra minuscula a mayuscula. */
-#include <stdio.h>
+//#include <stdio.h>
 
 int	ft_toupper(int c)
 {
