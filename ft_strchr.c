@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/02/11 15:50:16 by sagnzal           #+#    #+#             */
+/*   Updated: 2024/02/11 15:50:22 by sagnzal          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /* strchr => Busca un caracter dentro de una cadena, 
 recorriendola caracter a caracter. 
 Si no lo encuentra devuelve nulo.

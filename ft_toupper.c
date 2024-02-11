@@ -6,9 +6,10 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 12:01:55 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/01/22 12:56:22 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/02/11 15:51:00 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 /*toupper => Convierte una letra minuscula a mayuscula. */
 //#include <stdio.h>
 
