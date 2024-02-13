@@ -13,12 +13,14 @@
 /* strlen => Devuelve la longitud de una cadena sin contar el caracter nulo
 final.*/
 //#include <stdio.h>
+#include "libft.h"
+
 size_t	ft_strlen(const char *str)
 {
 	size_t	cont;
 
 	cont = 0;
-	while (str[cont] != '/0')
+	while (str[cont] != '\0')
 	{
 		cont++;
 	}
