@@ -17,9 +17,9 @@ char	*ft_strrchr(const char *str, int c)
 
 	len = ft_strlen(str);
 	if (str == "")
-		return ((void*) 0);
+		return ((void *) 0);
 	if (c == '\0')
-		return ((char*)&str[len]);
+		return ((char *)&str[len]);
 	while (len >= 0)
 	{
 		if (str[len] != c)
