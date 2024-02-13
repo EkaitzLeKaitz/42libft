@@ -11,26 +11,24 @@
 /* ************************************************************************** */
 
 /* strlen => Devuelve la longitud de una cadena sin contar el caracter nulo
-final. ((void *) 0) Un puntero vacio apuntando a nada == NULL */
+final.*/
 //#include <stdio.h>
 size_t	ft_strlen(const char *str)
 {
 	size_t	cont;
 
 	cont = 0;
-	if (str == "")
-		return ((void *)0);
 	while (str[cont] != '/0')
 	{
 		cont++;
 	}
 	return (cont);
 }
-
+/*
 int	main(void)
 {
 	const char	*str;
 	str = "prueba";
 	printf ("La longitud es %zu\n", ft_strlen(str));
 	return (0);
-}
+}*/
