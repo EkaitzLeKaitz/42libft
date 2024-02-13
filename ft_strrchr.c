@@ -16,7 +16,7 @@ char	*ft_strrchr(const char *str, int c)
 	size_t	len;
 
 	len = ft_strlen(str);
-	if (str == "")
+	if (str == 0)
 		return ((void *) 0);
 	if (c == '\0')
 		return ((char *)&str[len]);
