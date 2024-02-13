@@ -1,20 +1,8 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/11 15:50:16 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/02/11 15:50:22 by sagnzal          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-/* strchr => Busca un caracter dentro de una cadena, 
+/* strchr => (String Character) Busca un caracter dentro de una cadena, 
 recorriendola caracter a caracter. 
 Si no lo encuentra devuelve nulo.
 Si lo encuentra devuelve un puntero en la posicion donde encuentra el caracter.
-Si el caracter es nulo devuelve el caracter nulo que encuentre.
+Si el caracter es nulo devuelve el caracter nulo que encuentre [0 o ((void *) 0))] .
 */
 //#include <string.h>
 //#include <stdio.h>
@@ -28,14 +16,14 @@ char	*ft_strchr(const char *str, int c)
 		if (str[i] != c)
 			i++;
 		else
-			return ((char *)str[i]);
+			return ((char *)&str[i]);
 	}
 	if (c == '\0')
-		return ((char *)str[i]);
-	return (NULL);
+		return ((char *)&str[i]);
+	return (0);
 }
 /*
-int	main
+int	main(void)
 {
 	const char	*str;
 	int		c;
