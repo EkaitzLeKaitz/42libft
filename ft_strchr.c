@@ -8,6 +8,8 @@
 */
 //#include <string.h>
 //#include <stdio.h>
+#include "libft.h"
+
 char	*ft_strchr(const char *str, int c)
 {
 	int	i;
@@ -32,9 +34,9 @@ int	main(void)
 	const char	*str;
 	int		c;
 
-	str = "pepito";
-	c = 'i';
-//	printf ("original: %s\n", strchr(str, c));
-	printf ("propia: %s\n", ft_strchr(str, c));
+	str = "comion";
+	c = 'o';
+//	printf ("Original: %s\n", strchr(str, c));
+	printf ("Propia: %s\n", ft_strchr(str, c));
 	return (0);
 }*/
