@@ -12,8 +12,8 @@ Si src es 0 copia null('\0') en dest.
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	const unsigned char 	*onebyte_src;
-	const unsigned char	*onebyte_dest;
+	const unsigned char	*onebyte_src;
+	unsigned char		*onebyte_dest;
 	size_t			i;
 
 	onebyte_src = src;
@@ -23,10 +23,10 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 		return ((void *)0);
 	while (i < n && n != 0 && dest > src)
 	{
-		dest[i] = src[i];
+		onebyte_dest[i] = onebyte_src[i];
 		i++;
 	}
-	return (dest)
+	return (dest);
 }
 /*
 int	main(void)
@@ -43,6 +43,6 @@ int	main(void)
 	src[4] = 'e';
 //	memcpy(dest, src, n);
 	ft_memcpy(dest, src, n);
-	printf("%s\n", src, dest)
+	printf("%s\n", src, dest);
 	return (0);
 }*/
