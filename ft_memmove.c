@@ -26,7 +26,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		return (NULL);
 	while (i < n)
 	{
-		if(src <= dest)
+		if (src <= dest)
 		{
 			onebyte_dest[n - 1] = onebyte_src[n - 1];
 			n--;
@@ -48,17 +48,17 @@ int	main(void)
 
 	n = 4;
 	src[0] = 'a';
-	src[0] = 'n';
-	src[0] = 't';
-	src[0] = 'i';
+	src[1] = 'n';
+	src[2] = 't';
+	src[3] = 'i';
 	dest[0] = 'p';
-	dest[0] = 'r';
-	dest[0] = 'o';
-	dest[0] = 'n';
-	dest[0] = ' ';
-	dest[0] = 'g';
-	dest[0] = 'a';
-	dest[0] = 's';
+	dest[1] = 'r';
+	dest[2] = 'o';
+	dest[3] = 'n';
+	dest[4] = ' ';
+	dest[5] = 'g';
+	dest[6] = 'a';
+	dest[7] = 's';
 	memmove (dest, src, n);
 	ft_memmove (dest, src, n);
 	printf ("%s\n", dest);
