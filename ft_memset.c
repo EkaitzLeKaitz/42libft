@@ -27,7 +27,7 @@ void	*ft_memset(void *str, int c, size_t n)
 /*
 int	main(void)
 {
-	char	str[];
+	char	str[4444];
 	int	c;
 	size_t	n;
 

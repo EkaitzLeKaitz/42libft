@@ -30,7 +30,7 @@ void	ft_bzero(void *str, size_t n)
 /*
 int	main(void)
 {
-	char	str[];
+	char	str[6];
 	size_t	n;
 
 	str[0] = 'a';
