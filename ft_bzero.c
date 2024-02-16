@@ -16,7 +16,7 @@
 
 void	ft_bzero(void *str, size_t n)
 {
-	unsigned char	onebyte;
+	unsigned char	*onebyte;
 	size_t		i;
 
 	i = 0;
@@ -30,7 +30,7 @@ void	ft_bzero(void *str, size_t n)
 /*
 int	main(void)
 {
-	void	str[];
+	char	str[];
 	size_t	n;
 
 	str[0] = 'a';
@@ -41,7 +41,7 @@ int	main(void)
 	str[5] = 'w';
 	n = 0;
 //	bzero(str, n);
-	ft_bzero(str, n)
+	ft_bzero(str, n);
 	printf("%s\n", str);
 	return (0);
 }*/
