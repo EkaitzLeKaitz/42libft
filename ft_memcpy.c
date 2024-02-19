@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/02/19 08:35:49 by sagnzal           #+#    #+#             */
+/*   Updated: 2024/02/19 08:36:35 by sagnzal          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
 memcpy => Copia n bytes del area de memoria src al area dest.
 Recive el  *src , *dest y size_t n.
@@ -14,7 +26,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	const unsigned char	*onebyte_src;
 	unsigned char		*onebyte_dest;
-	size_t			i;
+	size_t				i;
 
 	onebyte_src = src;
 	onebyte_dest = dest;
