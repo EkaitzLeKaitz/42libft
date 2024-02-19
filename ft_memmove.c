@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/02/19 08:38:08 by sagnzal           #+#    #+#             */
+/*   Updated: 2024/02/19 08:38:25 by sagnzal          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
 memmove => Copia n bytes del bloque de memoria src al bloque de memoria dest,
 incluso si las areas de memoria se superponen. 
@@ -17,7 +29,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	const unsigned char	*onebyte_src;
 	unsigned char		*onebyte_dest;
-	size_t			i;
+	size_t				i;
 
 	i = 0;
 	onebyte_src = src;
