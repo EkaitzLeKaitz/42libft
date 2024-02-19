@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/02/19 08:57:06 by sagnzal           #+#    #+#             */
+/*   Updated: 2024/02/19 08:57:10 by sagnzal          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /* 
   strrchr => (String Reverse Character) Busca un caracter dentro de una 
   cadena, recorriendola caracter a caracter empezando por el final.
