@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/02/19 08:53:26 by sagnzal           #+#    #+#             */
+/*   Updated: 2024/02/19 08:53:46 by sagnzal          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
  memset => Recibe una cadena de cualquier tipo, un
  size_t n que indica el numero de carcteres que va a alterar
@@ -12,7 +24,7 @@
 
 void	*ft_memset(void *str, int c, size_t n)
 {
-	size_t		i;
+	size_t			i;
 	unsigned char	*onebyte;
 
 	i = 0;
