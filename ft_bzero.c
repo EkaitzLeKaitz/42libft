@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/02/19 07:31:39 by sagnzal           #+#    #+#             */
+/*   Updated: 2024/02/19 07:32:23 by sagnzal          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
  bzero => Recibe una string generica y un entero (n).
  n siempre es un numero mas que la cadena, al empezar
@@ -17,7 +29,7 @@
 void	ft_bzero(void *str, size_t n)
 {
 	unsigned char	*onebyte;
-	size_t		i;
+	size_t			i;
 
 	i = 0;
 	onebyte = str;
