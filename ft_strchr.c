@@ -1,5 +1,18 @@
-/* strchr => (String Character) Busca un caracter dentro de una cadena, 
- recorriendola caracter a caracter. 
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/02/19 08:54:59 by sagnzal           #+#    #+#             */
+/*   Updated: 2024/02/19 08:55:31 by sagnzal          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/* 
+strchr => (String Character) Busca un caracter dentro de una cadena, 
+recorriendola caracter a caracter. 
  -Si no lo encuentra devuelve nulo.
  -Si lo encuentra devuelve un puntero en la posicion donde encuentra 
   el caracter.
