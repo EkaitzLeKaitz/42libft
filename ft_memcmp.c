@@ -6,8 +6,8 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 09:12:17 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/02/19 09:13:00 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/02/19 09:19:47 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.c"
+#include "libft.h"
