@@ -33,7 +33,7 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 	while ((str1[i] != '\0' || str2[i] != '\0') && i < n)
 	{
 		if (str1[i] != str2[i])
-			return (((unsigned char *) str1[i]) - ((unsigned char *) str2[i]));
+			return ((unsigned char) str1[i] - (unsigned char) str2[i]);
 		else
 			i++;
 	}
@@ -43,10 +43,10 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 int	main(void)
 {
 	size_t	n;
-	char	*str1 = "avionaco";
-	char	*str2 = "avengers";
+	char	*str1 = "cba";
+	char	*str2 = "cbc";
 
-	n = 9;
+	n = 3;
 	printf("Original: %d\n", strncmp(str1, str2, n));
 	printf("Propia: %d\n", ft_strncmp(str1, str2, n));
 	return (0);
