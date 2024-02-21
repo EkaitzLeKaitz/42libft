@@ -6,7 +6,7 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 08:38:08 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/02/21 12:21:38 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/02/21 12:44:23 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ Devuelve un * al area de memoria dst.
 void	*ft_memmove(void *dst, const void *src, size_t n)
 {
 	const unsigned char	*onebyte_src;
-	unsigned char		*onebyte_dest;
+	unsigned char		*onebyte_dst;
 	size_t				i;
 
 	i = 0;

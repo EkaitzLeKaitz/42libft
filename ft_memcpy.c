@@ -6,7 +6,7 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 08:35:49 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/02/21 12:18:54 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/02/21 12:45:22 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ Si src es 0 copia null('\0') en dst.
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	const unsigned char	*onebyte_src;
-	unsigned char		*onebyte_dest;
+	unsigned char		*onebyte_dst;
 	size_t				i;
 
 	onebyte_src = src;
