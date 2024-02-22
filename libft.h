@@ -6,17 +6,19 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 10:55:18 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/02/22 07:36:46 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/02/22 07:57:17 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-ifndef =>
-define =>
-LIBFT_H =>
-<stdlibft.h> =>
-<unistd.h> =>
-endif =>
+ifndef => Verifica que el archivo no este  definido "nombre archivo en 
+mayusculas y _ en vez de ."
+define => Define "nombre de archivo en mayusculas y _ en vez de ."
+LIBFT_H => Nombre libreria.(_H define que es un archivo de encabezado)
+Se añaden las librerias que necesiten las funciones:
+ - <stdlibft.h> => Libreria del malloc y del free.
+ - <unistd.h> => Libreria del write.
+endif => Termina la definición.
 */
 #ifndef LIBFT_H
 # define LIBFT_H
@@ -31,11 +33,11 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
-int		ft_strncmp(const char *str1, const char *str2, size_t n);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_atoi(const char *str);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
-char	*ft_strchr(const char *str, int c);
-char	*ft_strrchr(const char *str, int c);
+char	*ft_strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 void	*ft_memset(void *b, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
