@@ -6,7 +6,7 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 08:38:08 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/02/21 12:44:23 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/02/22 07:35:54 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ Devuelve un * al area de memoria dst.
 //#include <string.h>
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t n)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	const unsigned char	*onebyte_src;
 	unsigned char		*onebyte_dst;
@@ -36,12 +36,12 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 	onebyte_dst = dst;
 	if (src == 0 && dst == 0)
 		return (NULL);
-	while (i < n)
+	while (i < len)
 	{
 		if (src <= dst)
 		{
-			onebyte_dst[n - 1] = onebyte_src[n - 1];
-			n--;
+			onebyte_dst[len - 1] = onebyte_src[len - 1];
+			len--;
 		}
 		if (src > dst)
 		{
@@ -56,9 +56,9 @@ int	main(void)
 {
 	char	dst[8];
 	char	src[4];
-	size_t	n;
+	size_t	len;
 
-	n = 4;
+	len = 4;
 	src[0] = 'a';
 	src[1] = 'n';
 	src[2] = 't';
@@ -71,8 +71,8 @@ int	main(void)
 	dst[5] = 'g';
 	dst[6] = 'a';
 	dst[7] = 's';
-	memmove (dst, src, n);
-	ft_memmove (dst, src, n);
+	memmove (dst, src, len);
+	ft_memmove (dst, src, len);
 	printf ("%s\n", dst);
 	return (0);
 }*/
