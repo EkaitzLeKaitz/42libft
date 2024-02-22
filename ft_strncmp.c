@@ -6,7 +6,7 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 09:09:23 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/02/19 09:10:18 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/02/22 07:45:15 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,17 +23,17 @@ restan al compararlos son positivos los casteamos con unsigned char.
 //#include <string.h>
 #include "libft.h"
 
-int	ft_strncmp(const char *str1, const char *str2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
 
 	i = 0;
-	if (n == 0 || (str1 == 0 && str2 == 0))
+	if (n == 0 || (s1 == 0 && s2 == 0))
 		return (0);
-	while ((str1[i] != '\0' || str2[i] != '\0') && i < n)
+	while ((s1[i] != '\0' || s2[i] != '\0') && i < n)
 	{
-		if (str1[i] != str2[i])
-			return ((unsigned char) str1[i] - (unsigned char) str2[i]);
+		if (s1[i] != s2[i])
+			return ((unsigned char) s1[i] - (unsigned char) s2[i]);
 		else
 			i++;
 	}
@@ -43,11 +43,11 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 int	main(void)
 {
 	size_t	n;
-	char	*str1 = "cba";
-	char	*str2 = "cbc";
+	char	*s1 = "cba";
+	char	*s2 = "cbc";
 
 	n = 3;
-	printf("Original: %d\n", strncmp(str1, str2, n));
-	printf("Propia: %d\n", ft_strncmp(str1, str2, n));
+	printf("Original: %d\n", strncmp(s1, s2, n));
+	printf("Propia: %d\n", ft_strncmp(s1, s2, n));
 	return (0);
 }*/
