@@ -6,7 +6,7 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 07:31:39 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/02/19 07:32:23 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/02/22 07:29:53 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,14 @@
 //#include <stdio.h>
 #include "libft.h"
 
-void	ft_bzero(void *str, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*onebyte;
 	size_t			i;
 
 	i = 0;
-	onebyte = str;
-	while (i < n && n != 0 && str != 0)
+	onebyte = s;
+	while (i < n && n != 0 && s != 0)
 	{
 		onebyte[i] = '\0';
 		i++;
@@ -42,18 +42,18 @@ void	ft_bzero(void *str, size_t n)
 /*
 int	main(void)
 {
-	char	str[6];
+	char	s[6];
 	size_t	n;
 
-	str[0] = 'a';
-	str[1] = 'n';
-	str[2] = 'd';
-	str[3] = 'r';
-	str[4] = 'i';
-	str[5] = 'w';
+	s[0] = 'a';
+	s[1] = 'n';
+	s[2] = 'd';
+	s[3] = 'r';
+	s[4] = 'i';
+	s[5] = 'w';
 	n = 0;
-//	bzero(str, n);
-	ft_bzero(str, n);
-	printf("%s\n", str);
+//	bzero(s, n);
+	ft_bzero(s, n);
+	printf("%s\n", s);
 	return (0);
 }*/
