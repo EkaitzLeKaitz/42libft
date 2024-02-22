@@ -6,7 +6,7 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 08:54:59 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/02/19 08:55:31 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/02/22 07:38:48 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,33 +23,33 @@ recorriendola caracter a caracter.
 //#include <stdio.h>
 #include "libft.h"
 
-char	*ft_strchr(const char *str, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	int	i;
 
 	i = 0;
-	if (str == 0)
+	if (s == 0)
 		return (0);
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 	{
-		if (str[i] != c)
+		if (s[i] != c)
 			i++;
 		else
-			return ((char *)&str[i]);
+			return ((char *)&s[i]);
 	}
 	if (c == '\0')
-		return ((char *)&str[i]);
+		return ((char *)&s[i]);
 	return (0);
 }
 /*
 int	main(void)
 {
-	const char	*str;
+	const char	*s;
 	int		c;
 
-	str = "comion";
+	s = "comion";
 	c = 'o';
-//	printf ("Original: %s\n", strchr(str, c));
-	printf ("Propia: %s\n", ft_strchr(str, c));
+//	printf ("Original: %s\n", strchr(s, c));
+	printf ("Propia: %s\n", ft_strchr(s, c));
 	return (0);
 }*/
