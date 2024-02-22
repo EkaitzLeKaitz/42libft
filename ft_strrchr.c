@@ -6,7 +6,7 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 08:57:06 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/02/19 08:57:10 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/02/22 07:40:48 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,34 +23,34 @@
 //#include <stdio.h>
 #include "libft.h"
 
-char	*ft_strrchr(const char *str, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	size_t	len;
 
-	len = ft_strlen(str);
-	if (str == 0)
+	len = ft_strlen(s);
+	if (s == 0)
 		return ((void *) 0);
 	if (c == '\0')
-		return ((char *)&str[len]);
+		return ((char *)&s[len]);
 	while (len >= 0)
 	{
-		if (str[len] != c)
+		if (s[len] != c)
 			len--;
 		else
-			return ((char *)&str[len]);
+			return ((char *)&s[len]);
 	}
 	return (0);
 }
 /*
 int	main(void)
 {
-	const char	*str;
+	const char	*s;
 	int		c;
 
 	c = 'o';
 	str ="comion";
-//	printf ("Original %s\n", strrchr(str, c));
-	printf ("Propia %s\n", ft_strrchr(str, c));
+//	printf ("Original %s\n", strrchr(s, c));
+	printf ("Propia %s\n", ft_strrchr(s, c));
 	return (0);
 }
  */
