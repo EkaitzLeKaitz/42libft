@@ -6,7 +6,7 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 10:55:18 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/02/21 15:11:23 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/02/22 07:36:46 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,9 @@ char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 void	*ft_memset(void *b, int c, size_t n);
-void	ft_bzero(void *str, size_t n);
+void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
-void	*ft_memmove(void *dst, const void *src, size_t n);
+void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memchr(const void *s, int c, size_t n);
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
