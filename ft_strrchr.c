@@ -32,7 +32,7 @@ char	*ft_strrchr(const char *s, int c)
 		return ((void *) 0);
 	if (c == '\0')
 		return ((char *)&s[len]);
-	while (len >= 0)
+	while (len > 0)
 	{
 		if (s[len] != c)
 			len--;
