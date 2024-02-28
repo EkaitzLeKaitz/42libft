@@ -24,7 +24,7 @@ Para devolver un puntero & y donde apunta. O s + numero de la posición.
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	const unsigned char	*onebyte_s;
-	unsigned int		onebyte_c;
+	unsigned char		onebyte_c;
 	size_t				i;
 
 	onebyte_s = s;
@@ -33,7 +33,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if (onebyte_s[i] == onebyte_c)
-			return ((void *)&s[i]);
+			return ((void *)(s + i));
 		else
 			i++;
 	}
