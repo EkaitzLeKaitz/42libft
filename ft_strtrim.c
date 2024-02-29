@@ -17,7 +17,7 @@ La string resultante se devuelve con una reserva en malloc.
 Devuelve NULL si falla la memoria.
 */
 
-#include <stdio.h>
+//#include <stdio.h>
 #include "libft.h"
 
 char	*ft_strtrim(char const *s1, char const *set)
@@ -32,10 +32,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 	i = 0;
 	j = ft_strlen(s1);
 	while (ft_strchr(set, s1[i]))
-			i++;
+		i++;
 	while (ft_strchr(set, s1[j - 1]))
-			j--;
-
+		j--;
 	trim = malloc(sizeof(char) * ((j - i) + 1));
 	if (!trim)
 		return (0);
@@ -47,14 +46,17 @@ char	*ft_strtrim(char const *s1, char const *set)
 	}
 	return (trim);
 }
-
+/*
 int	main(void)
 {
 	char	*s1;
 	char	*set;
+	char	*trim;
 
 	s1 = "122212pacoporras12212212";
 	set = "1212";
-	printf("%s\n", ft_strtrim(s1, set));
+	trim = ft_strtrim(s1, set);
+	printf("%s\n", trim);
+	free(trim);
 	return (0);
-}
+}*/
