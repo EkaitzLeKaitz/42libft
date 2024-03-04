@@ -16,7 +16,7 @@ la string s. La substring comienza desde el indice start y tiene una longitud
 maxima de len.
 Devuelve la substring resultante o NULL si falla la reserva de memoria.
 */
-//#include <stdio.h>
+#include <stdio.h>
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
@@ -25,6 +25,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	unsigned int	i;
 
 	i = 0;
+	if (!s)
+		return (0);
 	sub_s = malloc(sizeof(char) * (len + 1));
 	if (!sub_s)
 		return (0);
@@ -36,7 +38,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	return (sub_s);
 }
-/*
+
 int	main(void)
 {
 	char const	*s;
@@ -45,11 +47,11 @@ int	main(void)
 	char		*sub_s;
 
 
-	s = 	"anemoanemona";
+	s = "";
 	start = 5;
 	len = 	7;
 	sub_s = ft_substr(s, start, len);
 	printf("%s\n", sub_s);
 	free(sub_s);
 	return (0);
-}*/
+}
