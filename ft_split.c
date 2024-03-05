@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/05 10:47:17 by sagnzal           #+#    #+#             */
+/*   Updated: 2024/03/05 11:00:58 by sagnzal          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
 split => Crea un espacio de memoria para un array de strings,
 las cuales encuentra dentro de la string s, a partir del delimitador c.
@@ -17,7 +29,7 @@ static se añade delante de las funciones auxiliares para que tu libreria no
 confunda las funciones auxiliares con la principal.
 */
 #include "libft.h"
-#include <stdio.h>
+//#include <stdio.h>
 
 static size_t	wrds_s(char const *s, char c)
 {
@@ -79,7 +91,7 @@ static char	**sub_array(char **array, const char *s, char c)
 				return (0);
 			}
 			n++;
-			i = i + len_wrds(s, i ,c);
+			i = i + len_wrds(s, i, c);
 		}
 		else
 			i++;
