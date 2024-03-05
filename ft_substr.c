@@ -6,7 +6,7 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 09:28:36 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/02/19 09:28:58 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/03/05 10:59:38 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ la string s. La substring comienza desde el indice start y tiene una longitud
 maxima de len.
 Devuelve la substring resultante o NULL si falla la reserva de memoria.
 */
-#include <stdio.h>
+//#include <stdio.h>
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
@@ -38,7 +38,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	return (sub_s);
 }
-
+/*
 int	main(void)
 {
 	char const	*s;
@@ -54,4 +54,4 @@ int	main(void)
 	printf("%s\n", sub_s);
 	free(sub_s);
 	return (0);
-}
+}*/
