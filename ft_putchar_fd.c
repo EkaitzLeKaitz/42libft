@@ -33,7 +33,7 @@ int	main(void)
 	int		fd;
 
 	c = 'p';
-	fd = open("PruebaPut.txt", O_RDWR | O_CREAT | O_APPEND);
+	fd = open("PruebaPut.txt", O_RDWR | O_CREAT | O_APPEND, 0666);
 	ft_putchar_fd(c, fd);
 	close (fd);
 	return (0);

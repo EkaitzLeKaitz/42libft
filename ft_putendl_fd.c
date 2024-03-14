@@ -36,7 +36,7 @@ int	main(void)
 	char	*s = "NO ESTOY DE BROMA ";
 	int	fd;
 
-	fd = open("Pruebaput.txt", O_CREAT | O_RDWR | O_APPEND);
+	fd = open("PruebaPut.txt", O_CREAT | O_RDWR | O_APPEND, 0666);
 	ft_putendl_fd(s, fd);
 	close (fd);
 	return (0);

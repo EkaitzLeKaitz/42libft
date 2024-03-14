@@ -35,10 +35,10 @@ void	ft_putstr_fd(char *s, int fd)
 /*
 int	main(void)
 {
-	char	*s = "Esto no es un simulacro 2 ";
+	char	*s = "Esto no es un simulacro ";
 	int	fd;
 
-	fd = open("Pruebaput.txt", O_RDWR | O_APPEND | O_CREAT);
+	fd = open("PruebaPut.txt", O_RDWR | O_APPEND | O_CREAT, 0666);
 	ft_putstr_fd(s, fd);
 	close (fd);
 	return (0);
