@@ -9,7 +9,7 @@ la función.
 Establecemos como next de new el primer nodo de lst y luego igualamos *lst
 a new, para que pase a ser el primero de la lista.
 */
-#include <stdio.h>
+//#include <stdio.h>
 #include "libft.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
@@ -19,7 +19,7 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	new->next = *lst;
 	*lst = new;
 }
-
+/*
 int	main(void)
 {
 	t_list	*nodo1;
@@ -41,4 +41,4 @@ int	main(void)
 	ft_lstadd_front(lst, new);
 	printf("%s\n", (char *)(*lst)->content);
 	return (0);
-}
+}*/
