@@ -1,0 +1,37 @@
+/*
+lstadd_back => Añade el nodo new al final de la lista lst.
+*/
+//#include <stdio.h>
+#include "libft.h"
+
+void	ft_lstadd_back(t_list **lst, t_list *new)
+{
+	if (!lst || !new)
+		return ;
+	while ((*lst)->next)
+	{
+		lst = &((*lst)->next);
+	}
+	(*lst)->next = new;
+}
+/*
+int	main(void)
+{
+	t_list	*nodo1;
+	t_list	*nodo2;
+	t_list	*nodo3;
+	t_list	*new;
+
+	nodo1 = ft_lstnew("Dredi");
+	nodo2 = ft_lstnew("Pata");
+	nodo3 = ft_lstnew("Dija");
+	new = ft_lstnew("Pija");
+	nodo1->next = nodo2;
+	nodo2->next = nodo3;
+	nodo3->next = NULL;
+	new->next = NULL;
+	printf("%s\n", (char *)nodo1->content);
+	ft_lstadd_back(&nodo1, new);
+	printf("%s\n", (char *)ft_lstlast(nodo1)->content);
+	return (0);
+}*/
