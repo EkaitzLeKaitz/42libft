@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/21 15:06:34 by sagnzal           #+#    #+#             */
+/*   Updated: 2024/03/21 15:06:39 by sagnzal          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
 ft_lstadd_front => Añade el nodo new al principio de la lista lst.
 Primero creamos el main con la lista lst y sus nodos respectivos, y el nodo

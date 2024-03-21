@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/21 15:10:57 by sagnzal           #+#    #+#             */
+/*   Updated: 2024/03/21 15:11:02 by sagnzal          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*
- *
-lstsize =>
+lstsize => Cuenta el numero de nodos que tiene una lista y devuelve un int con
+el número.
 */
 //#include <stdio.h>
 #include "libft.h"
