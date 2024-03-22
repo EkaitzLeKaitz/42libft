@@ -6,7 +6,7 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 09:02:06 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/02/21 14:54:48 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/03/22 13:38:43 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 Concatena la cadena de destino(dst) con la cadena fuente(src) sin sobrepasar el
 tamaño del buffer deseado(destsize).
  - Si dst < dstsize la cadena se trunca.
-- Si dstsize <= la len_dst devuelve len_src + dstsize.
+ - Si dstsize <= len_dst devuelve len_src + dstsize.
  - Devuelve la longitud de la cadena concatenada posible.
  - Si destsize es 0 devuelve la longitud de la cadena fuente(src).
  -
@@ -40,6 +40,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		len_dst++;
 		i++;
 	}
+	dst[len_dst] = '\0';
 	return ((len_dst - i) + len_src);
 }
 /*
