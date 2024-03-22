@@ -6,7 +6,7 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 09:24:33 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/02/23 09:36:46 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/03/22 14:15:14 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ char	*ft_strdup(const char *s1)
 		str[i] = s1[i];
 		i++;
 	}
+	str[i] = '\0';
 	return (str);
 }
 /*
