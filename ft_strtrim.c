@@ -6,7 +6,7 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 09:31:44 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/02/19 09:32:13 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/03/22 14:59:21 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@ strtrim => Elimina todos los caracteres de la string "set" desde principio y
 desde el final de "s1" hasta encontrar un caracter no perteneciente a "set".
 La string resultante se devuelve con una reserva en malloc.
 Devuelve NULL si falla la memoria.
+ - Si s1 == NULL, devuelve 
 */
 
 //#include <stdio.h>
@@ -31,9 +32,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 	n = 0;
 	i = 0;
 	j = ft_strlen(s1);
-	while (ft_strchr(set, s1[i]))
+	while (ft_strchr(set, s1[i]) && s1[i] != '\0')
 		i++;
-	while (ft_strchr(set, s1[j - 1]))
+	while (ft_strchr(set, s1[j - 1]) && s1[i] != '\0')
 		j--;
 	trim = malloc(sizeof(char) * ((j - i) + 1));
 	if (!trim)
@@ -44,6 +45,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 		i++;
 		n++;
 	}
+	trim[n] = '\0';
 	return (trim);
 }
 /*
