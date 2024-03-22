@@ -6,7 +6,7 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 09:29:53 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/02/19 09:30:19 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/03/22 14:45:38 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		str_conc[i + j] = s2[j];
 		j++;
 	}
+	str_conc[i + j] = '\0';
 	return (str_conc);
 }
 /*
