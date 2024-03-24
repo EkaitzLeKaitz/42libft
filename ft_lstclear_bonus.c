@@ -13,6 +13,7 @@
 /*
 ft_lstclear.c => Recibe un puntero al primer nodo de una lista, y los borra en
 bucle hasta el final. Iguala el puntero del nodo a NULL al terminar.
+ - Si lst no existe o del no existe sale de la función.
 */
 //#include <stdio.h>
 #include "libft.h"
@@ -26,11 +27,13 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*alter_nodo;
 
+	if (!lst || !del)
+		return ;
 	while (*lst)
 	{
-		alter_nodo = *lst;
+		alter_nodo = (*lst)->next;
 		ft_lstdelone(*lst, del);
-		*lst = alter_nodo->next;
+		*lst = alter_nodo;
 	}
 	*lst = NULL;
 }
