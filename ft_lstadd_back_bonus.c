@@ -12,14 +12,20 @@
 
 /*
 lstadd_back => Añade el nodo new al final de la lista lst.
+Si lst no existe 
 */
 //#include <stdio.h>
 #include "libft.h"
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	if (!lst || !new)
+	if (!new)
 		return ;
+	if (!*lst)
+	{
+		*lst = new;
+		return ;
+	}
 	while ((*lst)->next)
 	{
 		lst = &((*lst)->next);
