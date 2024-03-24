@@ -32,11 +32,13 @@ con un si str no tiene valor (if(!str)) retorna NULL (return (0)).
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*str;
+	size_t	total_size;
 
-	str = malloc(size * (count + 1));
+	total_size = count * size;
+	str = malloc(total_size);
 	if (!str)
 		return (0);
-	ft_bzero(str, count);
+	ft_bzero(str, total_size);
 	return (str);
 }
 /*
