@@ -17,7 +17,6 @@ recorriendola caracter a caracter.
  -Si lo encuentra devuelve un puntero en la posicion donde encuentra 
   el caracter.
  -Si el caracter es nulo devuelve el caracter nulo que encuentre.
- -Si str esta vacia devuelve NULL {return (0) o return((void *) 0)}.
 */
 //#include <string.h>
 //#include <stdio.h>
@@ -28,8 +27,6 @@ char	*ft_strchr(const char *s, int c)
 	int	i;
 
 	i = 0;
-	if (s == 0)
-		return (0);
 	while (s[i] != '\0')
 	{
 		if (s[i] != c)
