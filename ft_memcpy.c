@@ -33,7 +33,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	i = 0;
 	if (src == 0 && dst == 0)
 		return ((void *)0);
-	while (i < n && n != 0 && dst > src)
+	while (i < n && n != 0)
 	{
 		onebyte_dst[i] = onebyte_src[i];
 		i++;
