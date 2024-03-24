@@ -28,8 +28,8 @@ Crearé 5 funciones auxiliares:
 static se añade delante de las funciones auxiliares para que tu libreria no 
 confunda las funciones auxiliares con la principal.
 */
-#include "libft.h"
 //#include <stdio.h>
+#include "libft.h"
 
 static size_t	wrds_s(char const *s, char c)
 {
@@ -104,6 +104,8 @@ char	**ft_split(char const *s, char c)
 {
 	char	**array;
 
+	if (!s)
+		return (NULL);
 	array = (char **)malloc(sizeof(char *) * (wrds_s(s, c) + 1));
 	if (!array)
 		return (0);
@@ -117,7 +119,7 @@ int	main(void)
 	char		**array;
 	size_t		n;
 
-	s = " Pablito clavo un clavito  ";
+	s = " Pablito";
 	c = ' ';
 	n = 0;
 	array = ft_split(s, c);
