@@ -33,7 +33,7 @@ void	ft_bzero(void *s, size_t n)
 
 	i = 0;
 	onebyte = s;
-	while (i < n && n != 0 && s != 0)
+	while (i < n)
 	{
 		onebyte[i] = '\0';
 		i++;

@@ -29,7 +29,7 @@ void	*ft_memset(void *b, int c, size_t n)
 
 	i = 0;
 	onebyte = b;
-	while (i < n && n != 0 && b != 0)
+	while (i < n)
 	{
 		onebyte[i] = c;
 		i++;
