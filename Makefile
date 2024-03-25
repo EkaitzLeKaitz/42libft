@@ -6,7 +6,7 @@
 #    By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/02 14:24:48 by sagnzal           #+#    #+#              #
-#    Updated: 2024/03/22 10:35:42 by sagnzal          ###   ########.fr        #
+#    Updated: 2024/03/25 15:42:01 by sagnzal          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,7 @@ SOURCES = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 
 SOURCES_B = ft_lstnew_bonus.c ft_lstadd_back_bonus.c ft_lstadd_front_bonus.c\
 ft_lstclear_bonus.c ft_lstdelone_bonus.c ft_lstlast_bonus.c ft_lstsize_bonus.c\
-ft_lstiter_bonus.c
+ft_lstiter_bonus.c ft_lstmap_bonus.c
 
 #(Se usa la barra inversa para comunicar que sigues escribiendo lo mismo cambiando de linea)  
 # 
