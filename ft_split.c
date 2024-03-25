@@ -6,7 +6,7 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 10:47:17 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/03/25 13:41:07 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/03/25 15:35:36 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static size_t	wrds_s(char const *s, char c)
 		else
 		{
 			a++;
-			while (s[i] != c && s[i])
+			while (s[i] != '\0' && s[i] != c)
 				i++;
 		}
 	}
@@ -71,6 +71,7 @@ static void	free_wrds(char **array, size_t n)
 		n--;
 		free(array[n]);
 	}
+	free(array);
 }
 
 static char	**sub_array(char **array, const char *s, char c)

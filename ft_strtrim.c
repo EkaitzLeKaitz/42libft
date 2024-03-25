@@ -6,7 +6,7 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 09:31:44 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/03/25 15:03:57 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/03/25 15:25:02 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,27 @@ Devuelve NULL si falla la memoria.
 //#include <stdio.h>
 #include "libft.h"
 
+static char	*copy(size_t i, size_t j, char *trim, char const *s1)
+{
+	size_t	n;
+
+	n = 0;
+	while (i < j)
+	{
+		trim[n] = s1[i];
+		i++;
+		n++;
+	}
+	trim[n] = '\0';
+	return (trim);
+}
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	i;
 	size_t	j;
-	size_t	n;
 	char	*trim;
 
-	n = 0;
 	i = 0;
 	if (!s1)
 		return (0);
@@ -42,13 +55,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	trim = malloc(sizeof(char) * ((j - i) + 1));
 	if (!trim)
 		return (0);
-	while (i < j)
-	{
-		trim[n] = s1[i];
-		i++;
-		n++;
-	}
-	trim[n] = '\0';
+	trim = copy(i, j, trim, s1);
 	return (trim);
 }
 /*
