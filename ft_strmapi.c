@@ -6,7 +6,7 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 11:15:32 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/03/05 11:15:41 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/03/25 14:53:43 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	unsigned int	i;
 
 	i = 0;
+	if (!s || s[i] == '\0')
+		return (0);
 	f_str = malloc(sizeof(char) * ft_strlen(s) + 1);
 	if (!f_str)
 		return (0);

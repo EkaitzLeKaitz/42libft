@@ -6,7 +6,7 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 11:19:20 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/03/05 11:19:22 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/03/25 14:54:53 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ void	ft_putendl_fd(char *s, int fd)
 	size_t	i;
 
 	i = 0;
+	if (!s || s[i] == '\0')
+		return ;
 	while (s[i] != '\0')
 	{
 		write(fd, &s[i], 1);

@@ -6,7 +6,7 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 09:31:44 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/03/22 14:59:21 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/03/25 15:03:57 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,12 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	n;
 	char	*trim;
 
-	trim = 0;
 	n = 0;
 	i = 0;
+	if (!s1)
+		return (0);
+	if (!set)
+		return ((char *)(s1));
 	j = ft_strlen(s1);
 	while (ft_strchr(set, s1[i]) && s1[i] != '\0')
 		i++;

@@ -6,7 +6,7 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 11:16:20 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/03/05 11:16:23 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/03/25 14:37:47 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	unsigned int	i;
 
 	i = 0;
+	if (!s || s[i] == '\0')
+		return ;
 	while (s[i] != '\0')
 	{
 		f(i, (s + i));

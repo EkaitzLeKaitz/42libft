@@ -6,7 +6,7 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 09:29:53 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/03/22 14:45:38 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/03/25 14:56:54 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = 0;
 	j = 0;
+	if ((!s1 || s1[i] == '\0')||(!s2 || s2[j] == '\0'))
+			return (0);
 	len_str = ft_strlen(s1) + ft_strlen(s2);
 	str_conc = malloc(sizeof(char) * len_str + 1);
 	if (!str_conc)
