@@ -6,7 +6,7 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 10:47:17 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/03/05 11:00:58 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/03/25 13:41:07 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static size_t	wrds_s(char const *s, char c)
 		else
 		{
 			a++;
-			while (s[i] != c)
+			while (s[i] != c && s[i])
 				i++;
 		}
 	}
@@ -119,8 +119,8 @@ int	main(void)
 	char		**array;
 	size_t		n;
 
-	s = " Pablito";
-	c = ' ';
+	s = "x Pablito";
+	c = 'x';
 	n = 0;
 	array = ft_split(s, c);
 	while (array[n])
