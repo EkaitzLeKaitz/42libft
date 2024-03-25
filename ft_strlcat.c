@@ -6,7 +6,7 @@
 /*   By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/19 09:02:06 by sagnzal           #+#    #+#             */
-/*   Updated: 2024/03/22 13:38:43 by sagnzal          ###   ########.fr       */
+/*   Updated: 2024/03/25 14:21:19 by sagnzal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	len_src;
 	size_t	i;
 
+	if (!dst && !dstsize)
+		return (ft_strlen(src));
 	len_src = ft_strlen(src);
 	len_dst = ft_strlen(dst);
 	i = 0;
