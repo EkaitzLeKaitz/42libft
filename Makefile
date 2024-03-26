@@ -6,7 +6,7 @@
 #    By: sagnzal <sagonzal@student.42madrid>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/02 14:24:48 by sagnzal           #+#    #+#              #
-#    Updated: 2024/03/25 15:42:01 by sagnzal          ###   ########.fr        #
+#    Updated: 2024/03/26 11:10:23 by sagnzal          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -79,5 +79,3 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
-	
-.PHONY: all fclean clean bonus
